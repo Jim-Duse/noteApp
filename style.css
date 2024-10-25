@@ -1,0 +1,83 @@
+body {
+    background-color: #c9c9c9;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image:
+        repeating-linear-gradient(
+            to right,
+            transparent 0 50px,
+            #32323211 50px 51px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            transparent 0 50px,
+            #32323211 50px 51px
+        );
+    position: relative;
+}
+.topTitle {
+    text-align: center;
+    color: #595959;
+}
+form {
+    background-color: #ffffff;
+    border: 2px #8c8c8c solid;
+    width: max-content;
+    padding: 5px;
+    margin: 3em auto;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px
+}
+form input, button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    cursor: pointer;
+}
+form input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+form input::-webkit-color-swatch {
+    border-radius: 50%;
+}
+#list textarea {
+    color: #303030;
+    border: 0;
+    font-size: 1.1em;
+}
+textarea:focus { 
+    outline: none !important;
+    border: 0px;
+}
+#list .note {
+    /*background-color: #3d3d3d;*/
+    background-color: #ffffff;
+    width: max-content;
+    border-top: 30px solid #e6b905;
+    border-radius: 5px;
+    box-shadow: 0 20px 50px #0004;
+    padding: 1px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+#list .note span {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 30px;
+    font-family: cursive;
+    font-size: large;
+    padding-right: 10px;
+    cursor: pointer;
+}
